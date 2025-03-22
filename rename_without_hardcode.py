@@ -3,7 +3,7 @@ image_directory = r"C:\path\to\your\image\folder" # add the folder path where al
 names_file = r"C:\path\to\your\image\folder\names.txt" # add the txt file with all the names 
 with open(names_file, "r", encoding="utf-8") as file:
     names = [line.strip() for line in file.readlines() if line.strip()]
-files = [f for f in os.listdir(image_directory) if f.startswith("Name (") and f.endswith(".png")]
+files = [f for f in os.listdir(image_directory) if f.startswith("Name (") and f.endswith(".png")] # you can also change the format to rename other file formats
 files.sort(key=lambda x: int(x.split("(")[1].split(")")[0]))
 if len(files) != len(names):
     print(f"Warning: Found {len(files)} images but {len(names)} names in the text file.")
