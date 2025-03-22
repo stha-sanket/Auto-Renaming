@@ -1,6 +1,6 @@
 import os
-image_directory = r"C:\path\to\your\image\folder"
-names_file = r"C:\path\to\your\image\folder\names.txt"
+image_directory = r"C:\path\to\your\image\folder" # add the folder path where all your images are located
+names_file = r"C:\path\to\your\image\folder\names.txt" # add the txt file with all the names 
 with open(names_file, "r", encoding="utf-8") as file:
     names = [line.strip() for line in file.readlines() if line.strip()]
 files = [f for f in os.listdir(image_directory) if f.startswith("Name (") and f.endswith(".png")]
