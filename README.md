@@ -14,3 +14,5 @@ This script renames image files in a folder based on a list of names from a text
    ```bash
    git clone https://github.com/your-username/image-renaming-script.git
    cd image-renaming-script
+
+2. Update the script with the correct paths to your image folder and the names.txt file:
