@@ -24,7 +24,11 @@ This script renames image files in a folder based on a list of names from a text
   image_directory = r"C:\path\to\your\image\folder"  # Update this path
    names_file = r"C:\path\to\your\image\folder\names.txt"  # Update this path
 3. Ensure that your names.txt file contains one name per line. For example:
-```
-Alice
-Bob
-Charlie
+   ```bash
+      Alice
+      Bob
+      Charlie
+4. Run the Script
+     ``` bash
+         python rename_images.py
+5. The script will rename the images in the specified directory according to the list of names in names.txt. If the number of images does not match the number of names, a warning will be displayed.
