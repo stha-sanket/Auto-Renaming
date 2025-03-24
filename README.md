@@ -15,4 +15,11 @@ This script renames image files in a folder based on a list of names from a text
    git clone https://github.com/your-username/image-renaming-script.git
    cd image-renaming-script
 
-2. Update the script with the correct paths to your image folder and the names.txt file:
+2. Update the script with the correct paths to your image folder and the `names.txt` file:
+- `image_directory` - The folder where your images are located.
+- `names_file` - The text file containing the list of names to use for renaming.
+
+- Example:
+  ```bash
+  image_directory = r"C:\path\to\your\image\folder"  # Update this path
+   names_file = r"C:\path\to\your\image\folder\names.txt"  # Update this path
