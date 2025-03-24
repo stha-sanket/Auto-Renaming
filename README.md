@@ -23,3 +23,8 @@ This script renames image files in a folder based on a list of names from a text
   ```bash
   image_directory = r"C:\path\to\your\image\folder"  # Update this path
    names_file = r"C:\path\to\your\image\folder\names.txt"  # Update this path
+3. Ensure that your names.txt file contains one name per line. For example:
+```
+Alice
+Bob
+Charlie
